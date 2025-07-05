@@ -1,8 +1,3 @@
-Absolutely! Here's the full **copy-paste-ready `README.md`** with everything embedded — your CVE info, payload, PoC video, and formatting suitable for GitHub:
-
----
-
-````markdown
 # 🛡️ CVE-2024-28623 – XSS Vulnerability in RiteCMS v3.0.0
 
 ## 🔍 Overview
@@ -26,9 +21,9 @@ This repository documents a **Cross-Site Scripting (XSS)** vulnerability discove
 
 The XSS vulnerability allows an attacker to execute arbitrary JavaScript in the victim’s browser, leading to:
 
-- Credential or session token theft
-- Phishing attacks via fake forms or redirects
-- Full control over the victim’s session (browser-based)
+- Credential or session token theft  
+- Phishing attacks via fake forms or redirects  
+- Full control over the victim’s session (browser-based)  
 - Potential privilege escalation (depending on context)
 
 ---
@@ -39,7 +34,7 @@ The XSS vulnerability allows an attacker to execute arbitrary JavaScript in the 
 
 ```html
 '"><svg/onload=confirm(/xsss/)>
-````
+```
 
 This payload demonstrates a basic reflected XSS vector that triggers a JavaScript `confirm()` dialog when rendered unsanitized.
 
@@ -55,22 +50,21 @@ This payload demonstrates a basic reflected XSS vector that triggers a JavaScrip
 
 ## 🛡️ Mitigation Recommendations
 
-* ✅ **Input Validation**: Properly sanitize and encode all user input rendered in HTML.
-* ✅ **Patch CMS**: Upgrade to a patched version when available.
-* ✅ **Security Headers**: Implement CSP (Content Security Policy) to restrict script execution.
-* ✅ **WAF**: Use a Web Application Firewall to detect and block common XSS payloads.
+- ✅ **Input Validation**: Properly sanitize and encode all user input rendered in HTML.  
+- ✅ **Patch CMS**: Upgrade to a patched version when available.  
+- ✅ **Security Headers**: Implement CSP (Content Security Policy) to restrict script execution.  
+- ✅ **WAF**: Use a Web Application Firewall to detect and block common XSS payloads.  
 
 ---
 
 ## 👨‍💻 Researcher Info
 
-**Discovered & Reported By:** \[@YourGitHubUsername]
-**CVE Link:** [CVE-2024-28623](https://nvd.nist.gov/vuln/detail/CVE-2024-28623)
-**Contact:** For questions or collaboration, open an issue or message via GitHub.
+**Discovered & Reported By:** [@GURJOTEXPERT](https://github.com/GURJOTEXPERT)  
+**CVE Link:** [CVE-2024-28623](https://nvd.nist.gov/vuln/detail/CVE-2024-28623)  
+**Contact:** For questions or collaboration, open an issue or message via GitHub.  
 
 ---
 
 ## 📬 Disclaimer
 
 This repository is published for educational and research purposes only. Do not attempt to exploit this vulnerability on systems you do not own or have explicit permission to test.
-
