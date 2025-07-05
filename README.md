@@ -42,7 +42,9 @@ This payload demonstrates a basic reflected XSS vector that triggers a JavaScrip
 
 ### 📹 PoC Video Demonstration
 
-📽️ [Click here to view the PoC video](https://github.com/GURJOTEXPERT/ritecms/blob/main/POC.mp4)
+
+https://github.com/user-attachments/assets/c7254309-157b-4986-b1a1-737f50ade5bf
+
 
 > ✅ This video demonstrates how the XSS vulnerability in RiteCMS v3.0.0 is triggered using the payload.
 
